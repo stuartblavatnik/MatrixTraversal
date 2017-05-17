@@ -155,7 +155,7 @@ namespace MatrixTraversal
                 myCurrentPosition.Y -= 1;
             }
 
-            if (MovedToPreviousPoint())
+            if (IveBeenHereBefore())
             {
                 AddToDeadEnds();
                 return false;
@@ -178,7 +178,7 @@ namespace MatrixTraversal
                 myCurrentPosition.Y += 1;
             }
 
-            if (MovedToPreviousPoint())
+            if (IveBeenHereBefore())
             {
                 AddToDeadEnds();
                 return false;
@@ -201,7 +201,7 @@ namespace MatrixTraversal
                 myCurrentPosition.X -= 1;
             }
 
-            if (MovedToPreviousPoint())
+            if (IveBeenHereBefore())
             {
                 AddToDeadEnds();
                 return false;
@@ -224,7 +224,7 @@ namespace MatrixTraversal
                 myCurrentPosition.X += 1;
             }
 
-            if (MovedToPreviousPoint())
+            if (IveBeenHereBefore())
             {
                 AddToDeadEnds();
                 return false;
@@ -242,7 +242,7 @@ namespace MatrixTraversal
             myCurrentPath.Add(myCurrentPosition);
         }
 
-        private bool MovedToPreviousPoint()
+        private bool IveBeenHereBefore()
         {
             return myCurrentPath.Contains(myCurrentPosition);
         }
