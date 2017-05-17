@@ -23,7 +23,7 @@ namespace MatrixTraversal.Tests
                 { 'l', 'd', 'r', 'd', 'u' }
             };
 
-            MatrixSolve ms = new MatrixSolve(matrix);
+            MatrixSolve ms = new MatrixSolve(matrix); //comment
 
             Assert.IsNotNull(ms);
         }
